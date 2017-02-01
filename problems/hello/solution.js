@@ -1,5 +1,3 @@
-const method = number => {
-  return number % 2 ? 'Alice' : 'Bob';
-};
+const method = () => "Hello World!";
 
 exports.method = method;
