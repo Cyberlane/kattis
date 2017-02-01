@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Cyberlane/kattis/issues"
   },
-  "homepage": "https://github.com/Cyberlane/kattis#readme"
+  "homepage": "https://github.com/Cyberlane/kattis#readme",
+  "dependencies": {
+    "tape": "^4.6.3"
+  }
 }
