@@ -4,7 +4,7 @@
   "description": "A small repo to track my progress on some Kattis exercises.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape $(find ./problems -name \"*.test.js\") | faucet"
   },
   "repository": {
     "type": "git",
