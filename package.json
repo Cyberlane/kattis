@@ -4,7 +4,7 @@
   "description": "A small repo to track my progress on some Kattis exercises.",
   "main": "index.js",
   "scripts": {
-    "test": "tape $(find ./problems -name \"*.test.js\") | faucet"
+    "test": "tape ./problems/**/*.test.js | faucet"
   },
   "repository": {
     "type": "git",
