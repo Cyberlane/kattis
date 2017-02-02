@@ -1,17 +1,14 @@
 const test = require('tape');
 const { method } = require('./solution');
+const { helper } = require('../helper');
 
 test('cold - sample 1', (assert) => {
   const input = [
     3,
     '5 -10 15'
   ];
-  const readline = () => input.shift();
-  const print = result => {
-    assert.equal(result, 1);
-    assert.end();
-  };
-  method(readline, print);
+  const expected = [1];
+  helper(assert, method, input, expected);
 });
 
 test('cold - sample 1', (assert) => {
@@ -19,10 +16,6 @@ test('cold - sample 1', (assert) => {
     5,
     '-14 -5 -39 -5 -7'
   ];
-  const readline = () => input.shift();
-  const print = result => {
-    assert.equal(result, 5);
-    assert.end();
-  };
-  method(readline, print);
+  const expected = [5];
+  helper(assert, method, input, expected);
 });

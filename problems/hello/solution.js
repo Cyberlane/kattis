@@ -1,3 +1,3 @@
-const method = print => print("Hello World!");
+const method = (readline, print) => print("Hello World!");
 
 exports.method = method;

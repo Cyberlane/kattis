@@ -1,10 +1,9 @@
 const test = require('tape');
 const { method } = require('./solution');
+const { helper } = require('../helper');
 
 test('Ensure we have hello world!', (assert) => {
-  const print = result => {
-    assert.equal(result, 'Hello World!');
-    assert.end();
-  };
-  method(print);
+  const input = [];
+  const expected = ['Hello World!'];
+  helper(assert, method, input, expected);
 });
