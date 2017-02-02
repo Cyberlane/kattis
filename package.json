@@ -4,7 +4,8 @@
   "description": "A small repo to track my progress on some Kattis exercises.",
   "main": "index.js",
   "scripts": {
-    "test": "tape ./problems/**/*.test.js | faucet"
+    "test": "tape ./problems/**/*.test.js | faucet",
+    "test:watch": "gulp autotest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/Cyberlane/kattis#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.3.11",
     "tape": "^4.6.3"
   }
 }
