@@ -2,6 +2,9 @@ const test = require('tape');
 const { method } = require('./solution');
 
 test('Ensure we have hello world!', (assert) => {
-  assert.equal(method(), 'Hello World!');
-  assert.end();
+  const print = result => {
+    assert.equal(result, 'Hello World!');
+    assert.end();
+  };
+  method(print);
 });

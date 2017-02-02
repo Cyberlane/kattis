@@ -7,9 +7,11 @@ test('cold - sample 1', (assert) => {
     'aaaaah',
   ];
   const readline = () => input.shift();
-  const result = method(readline);
-  assert.equal(result, 'no');
-  assert.end();
+  const print = result => {
+    assert.equal(result, 'no');
+    assert.end();
+  };
+  method(readline, print);
 });
 
 test('cold - sample 1', (assert) => {
@@ -18,7 +20,9 @@ test('cold - sample 1', (assert) => {
     'ah',
   ];
   const readline = () => input.shift();
-  const result = method(readline);
-  assert.equal(result, 'go');
-  assert.end();
+  const print = result => {
+    assert.equal(result, 'go');
+    assert.end();
+  }
+  method(readline, print);
 });

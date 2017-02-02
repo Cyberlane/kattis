@@ -1,5 +1,5 @@
-const method = readline => {
-  return (readline() % 2 ? 'Alice' : 'Bob');
+const method = (readline, print) => {
+  print(readline() % 2 ? 'Alice' : 'Bob');
 };
 
 exports.method = method;

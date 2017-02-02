@@ -1,5 +1,5 @@
-const method = readline => {
-  return readline().length >= readline().length ? 'go' : 'no';
+const method = (readline, print) => {
+  print(readline().length >= readline().length ? 'go' : 'no');
 };
 
 exports.method = method;
